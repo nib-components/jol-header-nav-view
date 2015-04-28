@@ -1,0 +1,116 @@
+
+/* === Join: Navigation: Links === */
+
+.jol-header-nav__item {
+  line-height: 36px;
+  text-align: center;
+}
+
+.jol-header-nav__link {
+  margin-top: 0.1em;
+  cursor: pointer;
+  color: #009623;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+  vertical-align: top;
+  text-decoration: none;
+}
+
+.jol-header-nav__item.is-current .jol-header-nav__link,
+.jol-header-nav__item.is-current .jol-header-nav__link:hover {
+  cursor: default;
+  opacity: 1;
+}
+
+.jol-header-nav__item.is-disabled .jol-header-nav__link,
+.jol-header-nav__item.is-disabled .jol-header-nav__link:hover {
+  cursor: default;
+  color: #fff;
+  opacity: 1;
+}
+
+/* === Progress bar === */
+
+.jol-header-progress {
+  overflow: hidden;
+  background-color: #ccc;
+}
+
+.jol-header-progress__indicator {
+  width: 0%;
+  transition: width 1s;
+  background-color: #fff;
+}
+
+.jol-header-progress__indicator:after {
+  display: block;
+  width: 0;
+  height: 0;
+  margin-left: 100%;
+  content: "";
+  border-style: solid;
+  border-width: 18px 0 18px 10px;
+  border-color: transparent transparent transparent #fff;
+}
+
+/* === @ Desktop - side by side with border  === */
+
+@media (min-width: 60em) {
+
+  .jol-header-nav {
+    margin-top: -36px;
+  }
+
+  .jol-header-progress {
+    height: 36px;
+  }
+
+  .jol-header-progress__indicator {
+    height: 36px;
+  }
+}
+
+/* === @ Tablet - on top of each other === */
+
+@media (max-width: 60em) {
+
+  .jol-header-nav {
+    margin-top: -40px;
+  }
+
+  .jol-header-nav__item {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .jol-header-progress {
+    height: 40px;
+  }
+
+  .jol-header-progress__indicator {
+    height: 40px;
+  }
+
+  .jol-header-progress__indicator:after {
+    border-width: 20px 0 20px 10px;
+  }
+
+}
+
+/* === @ Mobile - on top of each other with scrollbars === */
+
+@media (max-width: 40em) {
+
+  .jol-header__nav {
+    overflow-x: scroll;
+  }
+
+  .jol-header-nav,
+  .jol-header-progress {
+    min-width: 630px;
+  }
+
+}
+

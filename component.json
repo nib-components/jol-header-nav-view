@@ -1,0 +1,14 @@
+{
+  "name": "jol-header-nav-view",
+  "scripts": [
+    "view.js"
+  ],
+  "styles": [
+    "index.css"
+  ],
+  "dependencies": {
+    "digitaledgeit/js-view": "~0.1.8",
+    "nib-components/navigation": "~1.0.1",
+    "nib-health-funds/progress-bar": "~0.3.1"
+  }
+}
