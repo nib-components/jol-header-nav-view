@@ -1,5 +1,6 @@
 {
   "name": "jol-header-nav-view",
+  "main": "view.js",
   "scripts": [
     "view.js"
   ],
