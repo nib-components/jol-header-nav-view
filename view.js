@@ -28,11 +28,11 @@ module.exports = View.extend({
   },
 
   /**
-   * Set which navigation item is displayed as selected
+   * Set the currently selected navigation item
    * @param   {string}    name
    * @returns {View}
    */
-  setSelected: function(name) {
+  setCurrent: function(name) {
 
     //update the progress bar value to cover the current nav item - yuck co-ordinate calculation stuff
     var currentNavEl = this.links.findByPage(name);
