@@ -61,9 +61,9 @@ module.exports = View.extend({
         var itemCenter = item.offsetLeft+item.offsetWidth/2;
 
         if (itemCenter > viewportCenter) {
-          this.el.scrollLeft = itemCenter-viewportCenter; //scroll left
+          this.el.scrollLeft = itemCenter-viewportCenter; //scroll towards the end of the panel
         } else {
-          this.el.scrollLeft = viewportCenter-itemCenter; //scroll right - not tested
+          this.el.scrollLeft = 0; //scroll towards the start of the panel
         }
 
       }
